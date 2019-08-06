@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<title>Yen-Ming Huang</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/main.css" rel="stylesheet">
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="js/liquidFillGauge.js" language="JavaScript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<style>
+		.liquidFillGaugeText {
+			font-family: Helvetica;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+<!--		<a class="btn" href="index.html#portfolio">Back</a>-->
+		<form>
+			
+		</form>
+		<!-- Education -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="education">
+<!--			<a type="button" href="index.html#portfolio">Back</a>-->
+			<input type="button" value="Back" onclick="location.href='index.html#portfolio'" style="position: fixed; background-color: white; z-index: 1;" />
+			<div class="content">
+				<h2>Education</h2>
+				<h3>University of Southern California, CA</h3>
+				<h4>Master of Computer Science, 2017-2019(Expecting)</h4><br>
+
+				<h3>National Taiwan University - Taipei, Taiwan</h3>
+				<h4>Master of Electrical Engineering, 2013-2015</h4><br>
+
+				<h3>National Chiao Tung University - Hsinchu, Taiwan</h3>
+				<h4>Bachelor of Electrical Engineering, 2009-2013</h4><br>
+			</div>
+			<div class="image">
+				<img src="img/education1.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="projects">
+			<div class="content">
+				<h2>Projects</h2>
+
+				<!-- School details: copy this block to add more schools. -->
+				<h3>Real-time Stock Analysis Interface</h3>
+				<h4>January 2018</h4>
+				<p>Key contributions:</p>
+				<ul>
+					<li>Built a platform to search stock information using stock quote API, using Highcharts to display in both tabular format and charts format, and seeking News clips for the selected stock. </li>
+					<li>Developed front-end with <b>Bootstrap</b> toolkit, <b>AngularJS</b> and back-end server by <b>NodeJS</b> running on <b>AWS</b>.</li>
+					<li>Implemented an <b>Android</b> Mobile application, which allows users to search for stock information, save some stock symbols as favorites, and post to the Facebook timeline.</li>
+				</ul><br>
+
+				<h3>Travel and Entertainment Search Interface</h3>
+				<h4>August 2017 – December 2017</h4>
+				<ul>
+					<li>Utilized HTTP API to fetch user’s geolocation, search for places information using Google Places API, display map and directions for the selected place, and show the reviews by Yelp APIs.</li>
+					<li>Designed a webpage using a combination of <b>HTML5</b>, <b>Bootstrap</b>, <b>JQuery</b>, <b>AngularJS</b>, and <b>PHP</b>.</li>
+				</ul><br>
+
+				<h3>Signal Processing for Blood Pressure Using DWT</h3>
+				<h4>September 2014 – June 2015</h4>
+				<ul>
+					<li>Implemented an <b>iOS</b> application to monitor and display physical activity such as ECG, Oximetry, and heart rate to detect abnormalities.</li>
+					<li>Predicted the blood pressure from waveform operated Discrete Wavelet Transform(DWT) algorithm and narrowed the difference between anticipated and measured value within 5%.</li>
+				</ul><br>
+			</div>
+			<div class="image">
+				<img src="img/skills1.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="skills">
+			<div class="content" style="padding: 3em 3em 3em 3em">
+				<h2><center>Skills</center></h2>
+
+				<!-- School details: copy this block to add more schools. -->
+				<h3><center>Programming Languages: </center></h3>
+				<div class="container">
+					<div class="row" style="margin: 0">
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge1" onclick="gauge1.update(NewValue());"></svg>
+							<div class="align-center">C/C++</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge2" onclick="gauge2.update(NewValue());"></svg>
+							<div class="align-center">Java</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge3" onclick="gauge3.update(NewValue());"></svg>
+							<div class="align-center">JavaScript</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge4" onclick="gauge4.update(NewValue());"></svg>
+							<div class="align-center">SQL</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge5" onclick="gauge5.update(NewValue());"></svg>
+							<div class="align-center">PHP</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge6" onclick="gauge6.update(NewValue());"></svg>
+							<div class="align-center">Python</div>
+						</div>
+					</div>
+
+				</div>
+
+				<h3><center>Frameworks and IDEs: </center></h3>
+				<div class="container">
+					<div class="row" style="margin: 0">
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge7" onclick="gauge7.update(NewValue());"></svg>
+							<div class="align-center">AngularJS</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge8" onclick="gauge8.update(NewValue());"></svg>
+							<div class="align-center">Node.js</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge9" onclick="gauge9.update(NewValue());"></svg>
+							<div class="align-center">JQuery</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge10" onclick="gauge10.update(NewValue());"></svg>
+							<div class="align-center">Android Studio</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge11" onclick="gauge11.update(NewValue());"></svg>
+							<div class="align-center">Xcode</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
+							<svg id="fillgauge12" onclick="gaug12.update(NewValue());"></svg>
+							<div class="align-center">Bootstrap 3 & 4</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="image">
+				<img src="img/projects1.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Work Experience -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="work">
+			<div class="content">
+				<h2>Work Experience</h2>
+
+				<!-- Job Details: copy this block to add more positions. -->
+				<h3>Teach for Taiwan</h3>
+				<p>Tutor</p>
+				<p>January 2016 – September 2016</p>
+				<p>Guided students to develop basic programming skills with an Arduino and learn to complete projects independently.</p><br>
+
+				<!-- Job Details -->
+				<h3>NTUH-MediaTek Innovative Medical Research Center</h3>
+				<p>Data Analyst</p>
+				<p>September 2014 – June 2015</p>
+				<p>Key contributions:</p>
+				<ul>
+					<li>Designed a pattern recognition algorithm to predict severity of patients with acute stroke </li>
+					<li>A total of 110 patients were enrolled for validation analysis, and prediction accuracy was further enhanced up to 73%.</li>
+					<li>Published at the Engineering in Medicine and Biology Conference(2015 EMBC) as 1st author.</li>
+				</ul><br>
+
+				<!-- Job Details -->
+				<h3>National Taiwan University</h3>
+				<p>Teaching Assistant</p>
+				<p>September 2014 – January 2015</p>
+				<p>Assisted and supervised students in the Data Structures course by giving instructions on assignments and providing extra support to complete the final project.</p><br>
+
+				<h3>Academia Sinica</h3>
+				<p>Research Assistant</p>
+				<p>January 2014 – September 2014</p>
+				<i>“A Portable System for Lung Cancer Associated Volatile Organic Compound Detection”</i>
+				<p>Key contributions:</p>
+				<ul>
+					<li>Presented at the International Solid-State Circuits Conference (2015 ISSCC, top conference in IC fields).</li>
+					<li>Received invitation to submit manuscript to the IEEE Journal of Solid-State Circuits (2016 JSSC).</li>
+					<li>Implemented algorithm of peak detection with concentration linearity measured by R2 being 0.985 and detection sensitivity up to 15ppb.</li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="img/work1.jpg" alt="" style="position: absolute;left: 0px;" />
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/lineageichiro" target="_blank" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://github.com/lineageichiro" class="icon style2 fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/yen-ming-huang-605b1881" target="_blank" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="yenmingh@usc.edu" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<h2> Thank you for your time and consideration!</h2>
+				<p class="text-muted mb mb-0">Copyright &copy; Yen-Ming's Website 2018</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.scrollex.min.js"></script>
+	<script src="js/jquery.scrolly.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/main.js"></script>
+	<script language="JavaScript">
+		var gauge1 = loadLiquidFillGauge("fillgauge1", 90);
+		var config1 = liquidFillGaugeDefaultSettings();
+		var gauge2 = loadLiquidFillGauge("fillgauge2", 95, config1);
+		var config2 = liquidFillGaugeDefaultSettings();
+		var gauge3 = loadLiquidFillGauge("fillgauge3", 90, config2);
+		var config3 = liquidFillGaugeDefaultSettings();
+		var gauge4 = loadLiquidFillGauge("fillgauge4", 80, config3);
+		var config4 = liquidFillGaugeDefaultSettings();
+		var gauge5 = loadLiquidFillGauge("fillgauge5", 90, config4);
+		var config5 = liquidFillGaugeDefaultSettings();
+		var gauge6 = loadLiquidFillGauge("fillgauge6", 80, config5);
+
+		var gauge7 = loadLiquidFillGauge("fillgauge7", 90);
+		var config7 = liquidFillGaugeDefaultSettings();
+		var gauge8 = loadLiquidFillGauge("fillgauge8", 75, config7);
+		var config8 = liquidFillGaugeDefaultSettings();
+		var gauge9 = loadLiquidFillGauge("fillgauge9", 90, config8);
+		var config9 = liquidFillGaugeDefaultSettings();
+		var gauge10 = loadLiquidFillGauge("fillgauge10", 85, config9);
+		var config10 = liquidFillGaugeDefaultSettings();
+		var gauge11 = loadLiquidFillGauge("fillgauge11", 80, config10);
+		var config11 = liquidFillGaugeDefaultSettings();
+		var gauge12 = loadLiquidFillGauge("fillgauge12", 95, config11);
+
+		function NewValue() {
+			if (Math.random() > .5) {
+				return Math.round(Math.random() * 100);
+			} else {
+				return (Math.random() * 100).toFixed(1);
+			}
+		}
+	</script>
+</body>
+</html>
