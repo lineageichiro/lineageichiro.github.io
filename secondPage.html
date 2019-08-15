@@ -99,18 +99,10 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
 							<svg id="fillgauge3" onclick="gauge3.update(NewValue());"></svg>
-							<div class="align-center">JavaScript</div>
+							<div class="align-center">Objective-C/Swift</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
 							<svg id="fillgauge4" onclick="gauge4.update(NewValue());"></svg>
-							<div class="align-center">SQL</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
-							<svg id="fillgauge5" onclick="gauge5.update(NewValue());"></svg>
-							<div class="align-center">PHP</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
-							<svg id="fillgauge6" onclick="gauge6.update(NewValue());"></svg>
 							<div class="align-center">Python</div>
 						</div>
 					</div>
@@ -130,19 +122,11 @@
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
 							<svg id="fillgauge9" onclick="gauge9.update(NewValue());"></svg>
-							<div class="align-center">JQuery</div>
+							<div class="align-center">Xcode</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
 							<svg id="fillgauge10" onclick="gauge10.update(NewValue());"></svg>
 							<div class="align-center">Android Studio</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
-							<svg id="fillgauge11" onclick="gauge11.update(NewValue());"></svg>
-							<div class="align-center">Xcode</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 skillrow">
-							<svg id="fillgauge12" onclick="gaug12.update(NewValue());"></svg>
-							<div class="align-center">Bootstrap 3 & 4</div>
 						</div>
 					</div>
 
@@ -213,12 +197,8 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.scrollex.min.js"></script>
-	<script src="js/jquery.scrolly.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/util.js"></script>
-	<script src="js/main.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="liquidFillGauge.js" language="JavaScript"></script>
 	<script language="JavaScript">
 		var gauge1 = loadLiquidFillGauge("fillgauge1", 90);
 		var config1 = liquidFillGaugeDefaultSettings();
@@ -227,10 +207,7 @@
 		var gauge3 = loadLiquidFillGauge("fillgauge3", 90, config2);
 		var config3 = liquidFillGaugeDefaultSettings();
 		var gauge4 = loadLiquidFillGauge("fillgauge4", 80, config3);
-		var config4 = liquidFillGaugeDefaultSettings();
-		var gauge5 = loadLiquidFillGauge("fillgauge5", 90, config4);
-		var config5 = liquidFillGaugeDefaultSettings();
-		var gauge6 = loadLiquidFillGauge("fillgauge6", 80, config5);
+
 
 		var gauge7 = loadLiquidFillGauge("fillgauge7", 90);
 		var config7 = liquidFillGaugeDefaultSettings();
@@ -239,10 +216,7 @@
 		var gauge9 = loadLiquidFillGauge("fillgauge9", 90, config8);
 		var config9 = liquidFillGaugeDefaultSettings();
 		var gauge10 = loadLiquidFillGauge("fillgauge10", 85, config9);
-		var config10 = liquidFillGaugeDefaultSettings();
-		var gauge11 = loadLiquidFillGauge("fillgauge11", 80, config10);
-		var config11 = liquidFillGaugeDefaultSettings();
-		var gauge12 = loadLiquidFillGauge("fillgauge12", 95, config11);
+
 
 		function NewValue() {
 			if (Math.random() > .5) {
